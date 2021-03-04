@@ -14,18 +14,34 @@
         <p></p>
     </div>
     <script>
-        var emailArr = ['vampirekiller87@hotmail.com', 'bountyhunter86@gmail.com', 'jumpingplumber85@outlook.com', 'chosenandquiethero86@outlook.com']
-        console.log("Le email registrate sono: ", emailArr, emailArr.length);
-        var emailUser = prompt("Inserisci qui la tua email")
-        console.log("L'email inserita è: ", emailUser);
-        for (var i=0; i <=emailArr.length; i++) {
-            var emailServer = emailArr[i];
-            if (emailUser == emailServer) {
-                console.log("L'email inserita è tra quelle registrate! Ottimo, ora sei una non così velata citazione ad un classico videogioco per Nintendo Entertainment System!");
+        // esercizio email
+        // var emailArr = ['vampirekiller87@hotmail.com', 'bountyhunter86@gmail.com', 'jumpingplumber85@outlook.com', 'chosenandquiethero86@outlook.com']
+        // console.log("Le email registrate sono: ", emailArr, emailArr.length);
+        // var emailUser = prompt("Inserisci qui la tua email")
+        // console.log("L'email inserita è: ", emailUser);
+        // for (var i=0; i <=emailArr.length; i++) {
+        //     var emailServer = emailArr[i];
+        //     if (emailUser == emailServer) {
+        //         console.log("L'email inserita è tra quelle registrate! Ottimo, ora sei una non così velata citazione ad un classico videogioco per Nintendo Entertainment System!");
 
-            } else {
-                console.log("Mi dispiace, hai inserito una mail non valida.")
-            }
+        //     } else {
+        //         console.log("Mi dispiace, hai inserito una mail non valida.")
+        //     }
+        // }
+
+        var max= 6;
+        var min= 1;
+        prompt("Il gioco sta per iniziare, rullino i tamburi, suonino le trombe");
+        var numPC = Math.floor(Math.random() * max) + min;
+        console.log("Il numero tirato dal Computer è: ", numPC);
+        var numUser = Math.floor(Math.random() * max) + min;
+        console.log ("Il numero che hai tirato tu, ma non proprio tu, è: ", numUser);
+        if (numPC > numUser) {
+            console.log ("Il vincitore è il Computer, haha");
+        } else if (numPC < numUser) {
+            console.log ("Il vincitore sei tu! Bravo!")
+        } else {
+            console.log ("Siete tutti vincitori! Parità.")
         }
     </script>
 </body>
