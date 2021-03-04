@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/main.css">
+    <title>Dungeons and Dices and Emails</title>
+</head>
+<body>
+    <div class="container">
+        <p></p>
+        <p></p>
+        <p></p>
+    </div>
+    <script>
+        var emailArr = ['vampirekiller87@hotmail.com', 'bountyhunter86@gmail.com', 'jumpingplumber85@outlook.com', 'chosenandquiethero86@outlook.com']
+        console.log("Le email registrate sono: ", emailArr, emailArr.length);
+        var emailUser = prompt("Inserisci qui la tua email")
+        console.log("L'email inserita è: ", emailUser);
+        for (var i=0; i <=emailArr.length; i++) {
+            var emailServer = emailArr[i];
+            if (emailUser == emailServer) {
+                console.log("L'email inserita è tra quelle registrate! Ottimo, ora sei una non così velata citazione ad un classico videogioco per Nintendo Entertainment System!");
+
+            } else {
+                console.log("Mi dispiace, hai inserito una mail non valida.")
+            }
+        }
+    </script>
+</body>
+</html>
